@@ -15,12 +15,22 @@ class TestAdmin(unittest.TestCase):
         
     def test_validLogin(self):
         user = "standard_user"
-        pswd = "secret_sauc"
+        pswd = "secret_sauce"
     
         #lp = LoginPage(page)
         self.lp.login(user,pswd)
     
         expect(self.lp.page).to_have_url("https://www.saucedemo.com/inventory.html")
+        
+    
+    def test_validLogin(self):
+        user = "standard_user"
+        pswd = "secret_sauce"
+    
+        #lp = LoginPage(page)
+        self.lp.login(user,pswd)
+    
+        #expect(self.lp.page).to_have_url("https://www.saucedemo.com/inventory.html")
     
     #@pytest.mark.skip
     def test_inValidLogin(self):

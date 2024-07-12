@@ -23,15 +23,6 @@ class TestAdmin(unittest.TestCase):
         expect(self.lp.page).to_have_url("https://www.saucedemo.com/inventory.html")
         
     
-    def test_validLogin(self):
-        user = "standard_user"
-        pswd = "secret_sauce"
-    
-        #lp = LoginPage(page)
-        self.lp.login(user,pswd)
-    
-        #expect(self.lp.page).to_have_url("https://www.saucedemo.com/inventory.html")
-    
     #@pytest.mark.skip
     def test_inValidLogin(self):
         user = "locked_out_user"

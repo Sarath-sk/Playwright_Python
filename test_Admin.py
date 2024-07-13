@@ -15,7 +15,7 @@ class TestAdmin(unittest.TestCase):
         
     def test_validLogin(self):
         user = "standard_user"
-        pswd = "secret_sauc"
+        pswd = "secret_sauce"
     
         #lp = LoginPage(page)
         self.lp.login(user,pswd)

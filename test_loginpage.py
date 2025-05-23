@@ -40,4 +40,5 @@ def test_problemuser(page:Page):
         atrb = i.get_attribute("src")
         assert "/static/media/sl-404.168b1cce.jpg" in atrb
 
+# run this file
     

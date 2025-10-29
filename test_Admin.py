@@ -21,6 +21,7 @@ class TestAdmin(unittest.TestCase):
         self.lp.login(user,pswd)
     
         expect(self.lp.page).to_have_url("https://www.saucedemo.com/inventory.html")
+        
     
     #@pytest.mark.skip
     def test_inValidLogin(self):
